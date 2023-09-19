@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmationActivity">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_datos"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvConfirmationFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="nombre del contacto"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_nacimiento"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvConfirmationBirthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="01/01/2000"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telephone"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvConfirmationTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3201230123"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvConfirmationEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="miemail123@agenda.com"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvConfirmationDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="detalle corto para identificar al contacto"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnEditData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:foreground="@drawable/background_border_square"
+        android:text="@string/editar_datos"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
